@@ -11,9 +11,8 @@ A Google Apps Script that automatically tracks job application rejections by rea
 ## Setup Instructions
 
 1. **Prepare your Google Sheet:**
-   - You can create a new Google Sheet and import `sample_Tracking.csv` as a new tab named `Tracking`.
-   - Optionally import `sample_Rejection_Log.csv` as a new tab named `Rejection Log` (if it doesn't exist, the script will create it automatically).
-   - Ensure Column B is `Posting URL`, Column F is `Status`, Column G is `Comments`, and Column J is `Company`.
+   - Download the `Sample_Jobs_Sheet.xlsx` file from this repository and upload it to Google Drive to convert it into a Google Sheet. It already contains the `Tracking` and `Rejection Log` tabs formatted correctly!
+   - Alternatively, create your own sheet with a `Tracking` tab (ensure Column B is `Posting URL`, Column F is `Status`, Column G is `Comments`, and Column J is `Company`).
 
 2. **Add the Script:**
    - Open your Google Sheet and go to **Extensions > Apps Script**.

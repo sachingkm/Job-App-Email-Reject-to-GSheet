@@ -199,13 +199,13 @@ function trackedRows_(sheet) {
   const last = sheet.getLastRow();
   if (last < 2) return [];
   const rows = [];
-  sheet.getRange(2, 1, last - 1, 10).getDisplayValues().forEach(r => {
+  sheet.getRange(2, 1, last - 1, 11).getDisplayValues().forEach(r => {
     const url = String(r[1]).trim();
     const status = String(r[5]);
     const s = status.toLowerCase();
     const applied = s.indexOf('applied') >= 0 && s.indexOf('not applied') < 0;
     if (!/^https?:\/\//i.test(url) || (!applied && s.indexOf('reject') < 0)) return;
-    const company = String(r[9]).trim();
+    const company = String(r[10]).trim();
     const comments = String(r[6]);
     rows.push({
       url: url, status: status, company: company,
